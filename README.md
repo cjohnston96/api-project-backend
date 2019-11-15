@@ -32,7 +32,7 @@ npm start
 ## Let's check out the data!
 
 - Let's search a stock by its name using a GET request
-  https://api-project-backend.herokuapp.com/Apple
+    https://api-project-backend.herokuapp.com/Apple
     Wow! You just searched for just Apple data! Now replace Apple with any of:
     - Apple
     - AMD
@@ -45,20 +45,42 @@ npm start
     - Uber
     - Zynga
 
-- Why not add our own data using a PUT request?
-  here is an example of me adding a new stock to the collection:
+- Why not add our own data using a POST request?
+    here is an example of me adding a new stock to the collection:
+    POST https://api-project-backend.herokuapp.com/
 ```
- {
- "name": "Apple",
+{
+ "name": "Conor",
   "data": [
     {
-      "Date": "2014-11-12",
-      "Open": 109.379997,
-      "High": 111.43,
-      "Low": 109.370003,
-      "Close": 111.25,
-      "Adj Close": 102.21843,
-      "Volume": 46942400
-    }
-  }
+      "Date": "2019-11-14",
+      "Open": 3,
+      "High": 4,
+      "Low": 0.01,
+      "Close": 0.50,
+      "Adj Close": 0.50,
+      "Volume": 45
+    }]
+}
 ```
+
+- Next, let's modify our new stock to make it seem like our company is better using a PUT request:
+    PUT https://api-project-backend.herokuapp.com/Conor
+```
+{
+ "name": "Conor",
+  "data": [
+    {
+      "Date": "2019-11-14",
+      "Open": 300,
+      "High": 400,
+      "Low": 300,
+      "Close": 375,
+      "Adj Close": 366.69,
+      "Volume": 450000
+    }]
+}
+```
+
+- Finally, we realized that it's not good to add fake stocks to real data, so lets use a DELETE request:
+    DELETE https://api-project-backend.herokuapp.com/Conor
