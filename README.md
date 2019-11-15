@@ -1,14 +1,14 @@
 # Welcome to My Stock Forecasting API!
 
-In this project, I built out a server side interactive database using Node.js, Express, and MongoDB to search 10 stocks and view data from forecast models that I built! All of the data I used to seed my database with are from [Yahoo Finance](www.finance.yahoo.com/). All of the data i created from my forecasting methods were done in RStudio.
+In this project, I built out a server side interactive database using Node.js, Express, and MongoDB and Mongoose to search 10 stocks and view data from forecast models that I built! All of the data I used to seed my database with are from [Yahoo Finance](www.finance.yahoo.com/). All of the data i created from my forecasting methods were done in RStudio. All CRUD testing was done using Postman.
 
 ## To check it out, click [HERE](https://api-project-backend.herokuapp.com/) 
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
 ## To work with on your personal machine:
 
 1. Clone (or fork and clone) my repo
